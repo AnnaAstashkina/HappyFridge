@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.calendar.CalendarFragment">
+
+    <CalendarView
+        android:id="@+id/calendar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="4dp"
+        android:id="@+id/text_view_expiring_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_orange"
+        android:gravity="center_horizontal"
+        android:padding="8dp"
+        android:text="@string/calendar_expiring_today"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/list_view_calendar_products"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="0.5dp"
+        android:paddingBottom="80dp"
+        tools:listitem="@layout/item_product" />
+
+    <TextView
+        android:id="@+id/text_view_empty_calendar_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingBottom="80dp"
+        android:text="@string/calendar_empty_list"
+        android:visibility="gone" />
+
+</LinearLayout>

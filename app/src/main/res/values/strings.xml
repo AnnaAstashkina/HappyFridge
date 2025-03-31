@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">HappyFridge</string>
+
+    <!-- Нижняя навигация -->
+    <string name="title_products">Все продукты</string>
+    <string name="title_calendar">Календарь</string>
+    <string name="title_statistics">Статистика</string>
+
+    <!-- Элемент списка продуктов -->
+    <string name="product_expiry_label">годен до:</string>
+    <string name="product_quantity_label">кол-во:</string>
+    <string name="product_days_label">дней</string>
+    <string name="product_context_delete">Удалить продукт</string>
+    <string name="product_context_consume">Потратить весь продукт</string>
+    <string name="product_context_edit">Редактировать</string>
+
+    <!-- Экран добавления/редактирования -->
+    <string name="add_product_title">Добавить продукт</string>
+    <string name="edit_product_title">Редактировать продукт</string>
+    <string name="product_name_hint">Название продукта</string>
+    <string name="category_label">Категория</string>
+    <string name="quantity_label">Количество:</string>
+    <string name="unit_label">Ед. изм.:</string>
+    <string name="expiry_type_label">Срок годности:</string>
+    <string name="radio_expires_on">годен до:</string>
+    <string name="radio_expires_in">годен в течение:</string>
+    <string name="expiry_date_label">дата просрочки:</string>
+    <string name="manufacturing_date_label">дата изготовления:</string>
+    <string name="shelf_life_label">срок хранения:</string>
+    <string name="shelf_life_unit_days">суток</string>
+    <string name="shelf_life_unit_months">месяцев</string>
+    <string name="button_ok">ok</string>
+    <string name="button_add">Добавить</string>
+    <string name="select_date">Выбрать дату</string>
+    <string name="error_empty_field">Поле не может быть пустым</string>
+    <string name="error_invalid_number">Введите корректное число</string>
+    <string name="error_generic">Произошла ошибка</string>
+
+    <!-- Экран календаря -->
+    <string name="calendar_expiring_today">Истекают сегодня</string>
+    <string name="calendar_expiring_on">Истекают %s</string>
+    <string name="calendar_empty_list">Нет продуктов с истекающим сроком в этот день</string>
+
+    <!-- Экран статистики -->
+    <string name="stats_consumed_on_time">Съедено в срок:</string>
+    <string name="stats_consumed_expired">Съедено с просрочкой:</string>
+    <string name="stats_percentage_format">%d%%</string> <!-- Формат процента -->
+    <string name="stats_no_data">Нет данных для статистики</string>
+
+    <!-- Список продуктов -->
+    <string name="product_list_empty">Холодильник пуст. Добавьте продукты!</string>
+</resources>

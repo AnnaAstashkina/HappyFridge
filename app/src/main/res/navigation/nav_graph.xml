@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Граф навигации для приложения -->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_product_list"> <!-- Стартовый экран -->
+
+    <!-- Фрагмент списка продуктов -->
+    <fragment
+        android:id="@+id/navigation_product_list"
+        android:name="com.example.happyfridge.ui.list.ProductListFragment"
+        android:label="@string/title_products"
+        tools:layout="@layout/fragment_product_list" />
+
+    <!-- Фрагмент календаря -->
+    <fragment
+        android:id="@+id/navigation_calendar"
+        android:name="com.example.happyfridge.ui.calendar.CalendarFragment"
+        android:label="@string/title_calendar"
+        tools:layout="@layout/fragment_calendar" />
+
+    <!-- Фрагмент статистики -->
+    <fragment
+        android:id="@+id/navigation_statistics"
+        android:name="com.example.happyfridge.ui.stats.StatisticsFragment"
+        android:label="@string/title_statistics"
+        tools:layout="@layout/fragment_statistics" />
+
+    <!-- Фрагмент добавления/редактирования -->
+    <fragment
+        android:id="@+id/addEditProductFragment"
+        android:name="com.example.happyfridge.ui.addedit.AddEditProductFragment"
+        android:label="Продукт"
+        tools:layout="@layout/fragment_add_edit_product">
+        <!-- Аргумент для передачи ID продукта (для режима редактирования) -->
+        <argument
+            android:name="product_id"
+            android:defaultValue="-1"
+            app:argType="integer" /> <!-- Значение по умолчанию -1 (добавление) -->
+    </fragment>
+
+    <!-- Глобальное действие для перехода на экран добавления/редактирования из любого места -->
+    <action
+        android:id="@+id/action_global_addEditProductFragment"
+        app:destination="@id/addEditProductFragment" />
+
+</navigation>

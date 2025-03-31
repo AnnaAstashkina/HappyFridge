@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#FF888888</color>
+    <color name="darker_gray">#FF555555</color>
+    <color name="item_gray">#666666</color>
+
+    <color name="app_yellow">#FFDC57</color>
+    <color name="app_orange">#FFB252</color>
+    <color name="app_green">#C8D144</color>
+    <color name="app_dark_green">#A4AF0D</color>
+    <color name="app_red">#BF6360</color>
+    <color name="app_dark_red">#BF4844</color>
+    <color name="app_light_yellow">#FFF0B9</color>
+    <color name="product_image_background">#FFF9E6</color>
+
+    <color name="status_ok">@color/app_dark_green</color>
+    <color name="status_warning">@color/app_orange</color>
+    <color name="status_expired">@color/app_dark_red</color>
+</resources>

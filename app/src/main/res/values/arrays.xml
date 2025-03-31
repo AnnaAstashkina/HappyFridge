@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Единицы измерения -->
+    <string-array name="product_units">
+        <item>шт.</item>
+        <item>гр.</item>
+        <item>кг.</item>
+        <item>мл.</item>
+        <item>л.</item>
+    </string-array>
+
+    <!-- Категории продуктов -->
+    <string-array name="product_categories">
+        <item>Мясная продукция</item>
+        <item>Молочная продукция</item>
+        <item>Овощи</item>
+        <item>Фрукты</item>
+        <item>Морепродукты</item>
+        <item>Прочее</item>
+    </string-array>
+
+    <!-- Единицы срока хранения -->
+    <string-array name="shelf_life_units">
+        <item>@string/shelf_life_unit_days</item>
+        <item>@string/shelf_life_unit_months</item>
+    </string-array>
+</resources>
